@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Погода</string>
+    <string name="Title">Погода сейчас</string>
+    <string name="Button">Узнать погоду</string>
 </resources>
