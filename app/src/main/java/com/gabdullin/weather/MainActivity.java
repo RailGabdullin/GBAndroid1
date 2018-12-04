@@ -13,53 +13,61 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        makeToast("onCreate");
+        showLiveCycleStage("onCreate");
     }
 
     @Override
     protected void onStart(){
         super.onStart();
-        makeToast("onStart");
+        showLiveCycleStage("onStart");
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        makeToast("onRestoreInstanceState");
+        showLiveCycleStage("onRestoreInstanceState");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        makeToast("onResume");
+        showLiveCycleStage("onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        makeToast("onPause");
+        showLiveCycleStage("onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        makeToast("onStop");
+        showLiveCycleStage("onStop");
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        makeToast("onSaveInstanceState");
+        showLiveCycleStage("onSaveInstanceState");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        makeToast("onDestroy");
+        showLiveCycleStage("onDestroy");
+    }
+
+    private void showLiveCycleStage (String text){
+        makeToast(text);
+        makeLogWrite(text);
     }
 
     private void makeToast (String text){
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    private void makeLogWrite (String text){
         Log.i(Tag, text);
     }
 }
