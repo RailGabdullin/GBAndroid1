@@ -2,4 +2,12 @@
     <string name="app_name">Погода</string>
     <string name="Title">Погода сейчас</string>
     <string name="Button">Узнать погоду</string>
+    <string name="first_city">Москва</string>
+    <string name="second_city">Санкт-Петербург</string>
+    <string name="third_city">Уфа</string>
+    <string name="wind_force">Сила ветра</string>
+    <string name="wet">Влажность</string>
+    <string name="pressure">Давление</string>
+    <string name="weather_in_">Погода в городе</string>
+    <string name="no_value">_ Н</string>
 </resources>
