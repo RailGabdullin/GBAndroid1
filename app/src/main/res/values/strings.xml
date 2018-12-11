@@ -9,5 +9,9 @@
     <string name="wet">Влажность</string>
     <string name="pressure">Давление</string>
     <string name="weather_in_">Погода в городе</string>
-    <string name="no_value">_ Н</string>
+    <string name="no_value">_Н</string>
+    <string name="where">Погода в городе:</string>
+    <string name="wind_force_value">10 метров/сек</string>
+    <string name="pressure_value">57 мм.рт.с.</string>
+    <string name="wet_value">40%</string>
 </resources>

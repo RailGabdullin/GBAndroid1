@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/in_the_city"
-            android:text="@string/no_value" />
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -34,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/wind_force"
-            android:text="@string/no_value" />
+            android:text="@string/wind_force_value" />
     </LinearLayout>
 
     <LinearLayout
@@ -50,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/pressure"
-            android:text="@string/no_value"/>
+            android:text="@string/pressure_value"/>
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/wet"
-            android:text="@string/no_value" />
+            android:text="@string/wet_value" />
     </LinearLayout>
 
 </LinearLayout>

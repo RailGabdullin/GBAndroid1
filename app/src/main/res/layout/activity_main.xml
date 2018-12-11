@@ -11,24 +11,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal">
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/first_city"
-                android:id="@+id/first_city_button"
-                android:layout_margin="@dimen/button_margin"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/second_city"
-                android:id="@+id/second_city_button"
-                android:layout_margin="@dimen/button_margin"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/third_city"
-                android:id="@+id/third_city_button"
-                android:layout_margin="@dimen/button_margin"/>
+                android:text="@string/where"/>
+            <EditText
+                android:id="@+id/the_city"
+                android:layout_width="@dimen/city_enter_size"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
         <LinearLayout
@@ -36,19 +26,19 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
-            <android.support.v7.widget.AppCompatCheckBox
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/wind_force"
                 android:id="@+id/wind_force"/>
 
-            <android.support.v7.widget.AppCompatCheckBox
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/wet"
                 android:id="@+id/wet"/>
 
-            <android.support.v7.widget.AppCompatCheckBox
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pressure"
@@ -56,18 +46,18 @@
 
         </LinearLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Button"
-            android:layout_gravity="center"/>
+            android:text="@string/Button"/>
 
-    </FrameLayout>
+    </LinearLayout>
 
     </LinearLayout>
 
