@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/icon_sizes"
+        android:layout_height="@dimen/icon_sizes"
+        android:src="@drawable/settings"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/settings_icon_margin"
+        android:id="@+id/settings_button"
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/info_layout_marginTop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/in_the_city"
+            android:text="@string/where"
+            android:textSize="@dimen/city_text_size"
+            android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="@dimen/location_icon_size"
+        android:layout_height="@dimen/location_icon_size"
+        android:src="@drawable/location"
+        android:layout_margin="@dimen/location_icon_margin"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_top_of_indicators_block"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/indicators_block_width"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/indicators_block_width">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:src="@drawable/temperature"
+                android:text="@string/temperature"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature_force_value"
+                    style="@style/indicators_value_text_style"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature_units"
+                    style="@style/indicators_unit_text_style"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/indicators_block_width">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:src="@drawable/wind_force"
+                android:text="@string/wind_force"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wind_force"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wind_force_value"
+                    style="@style/indicators_value_text_style"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wind_force_units"
+                    style="@style/indicators_unit_text_style"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/indicators_block_width">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:src="@drawable/pressure"
+                android:text="@string/pressure"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pressure_value"
+                    style="@style/indicators_value_text_style"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pressure_units"
+                    style="@style/indicators_unit_text_style"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/indicators_block_width">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:src="@drawable/wet"
+                android:text="@string/wet"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wet_value"
+                    style="@style/indicators_value_text_style"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wet_units"
+                    style="@style/indicators_unit_text_style"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
