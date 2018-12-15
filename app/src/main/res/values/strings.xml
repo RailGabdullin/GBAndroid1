@@ -1,17 +1,23 @@
 <resources>
     <string name="app_name">Погода</string>
     <string name="Title">Погода сейчас</string>
-    <string name="Button">Узнать погоду</string>
+    <string name="Button">Применить настройки</string>
     <string name="first_city">Москва</string>
     <string name="second_city">Санкт-Петербург</string>
     <string name="third_city">Уфа</string>
+    <string name="temperature">Температура</string>
     <string name="wind_force">Сила ветра</string>
     <string name="wet">Влажность</string>
     <string name="pressure">Давление</string>
     <string name="weather_in_">Погода в городе</string>
     <string name="no_value">_Н</string>
-    <string name="where">Погода в городе:</string>
-    <string name="wind_force_value">10 метров/сек</string>
-    <string name="pressure_value">57 мм.рт.с.</string>
-    <string name="wet_value">40%</string>
+    <string name="where">Выберите город</string>
+    <string name="wind_force_value">10</string>
+    <string name="temperature_force_value">15</string>
+    <string name="pressure_value">57</string>
+    <string name="pressure_units">мм.рт.с.</string>
+    <string name="wet_value">40</string>
+    <string name="wet_units">%</string>
+    <string name="wind_force_units">м/сек</string>
+    <string name="temperature_units">°C</string>
 </resources>

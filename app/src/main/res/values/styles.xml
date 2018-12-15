@@ -7,5 +7,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="indicators_unit_text_style" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/indicator_text_size</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="indicators_value_text_style" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/indicator_value_size</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
 
 </resources>

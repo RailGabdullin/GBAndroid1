@@ -32,18 +32,18 @@ public class TheCityWeather extends AppCompatActivity {
 
     }
 
-    private void setView(){
+    private void setView() {
         theCity = findViewById(R.id.in_the_city);
         windForce = findViewById(R.id.wind_force);
         pressure = findViewById(R.id.pressure);
         wet = findViewById(R.id.wet);
     }
 
-    private void setState(Intent intent){
+    private void setState(Intent intent) {
         theCity.setText(intent.getStringExtra(EXTRA_CITY));
-        windForce.setVisibility(intent.getBooleanExtra(EXTRA_WIND_FORCE, false)? View.VISIBLE : View.INVISIBLE);
-        wet.setVisibility(intent.getBooleanExtra(EXTRA_WET_STATE, false)? View.VISIBLE : View.INVISIBLE);
-        pressure.setVisibility(intent.getBooleanExtra(EXTRA_PRESSURE_STATE, false)? View.VISIBLE : View.INVISIBLE);
+        windForce.setVisibility(intent.getBooleanExtra(EXTRA_WIND_FORCE, false) ? View.VISIBLE : View.INVISIBLE);
+        wet.setVisibility(intent.getBooleanExtra(EXTRA_WET_STATE, false) ? View.VISIBLE : View.INVISIBLE);
+        pressure.setVisibility(intent.getBooleanExtra(EXTRA_PRESSURE_STATE, false) ? View.VISIBLE : View.INVISIBLE);
     }
 
 }

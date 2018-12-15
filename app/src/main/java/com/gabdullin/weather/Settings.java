@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class Settings extends AppCompatActivity {
 
     private static final String Tag = "LifeCycle";
     private EditText theCity;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setViews();
     }
 
-    private void setViews(){
+    private void setViews() {
         theCity = findViewById(R.id.the_city);
         wind_forse = findViewById(R.id.wind_force);
         wet = findViewById(R.id.wet);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void setBundle(Intent intent){
+    private void setBundle(Intent intent) {
         String theCityName = theCity.getText().toString();
         boolean windForceState = wind_forse.isChecked();
         boolean wetState = wet.isChecked();
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
         showLiveCycleStage("onStart");
     }
@@ -101,16 +101,16 @@ public class MainActivity extends AppCompatActivity {
         showLiveCycleStage("onDestroy");
     }
 
-    private void showLiveCycleStage (String text){
+    private void showLiveCycleStage(String text) {
         makeToast(text);
         makeLogWrite(text);
     }
 
-    private void makeToast (String text){
+    private void makeToast(String text) {
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 
-    private void makeLogWrite (String text){
+    private void makeLogWrite(String text) {
         Log.i(Tag, text);
     }
 }

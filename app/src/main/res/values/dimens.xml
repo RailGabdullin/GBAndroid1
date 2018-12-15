@@ -2,4 +2,15 @@
 <resources>
     <dimen name="button_margin">5dp</dimen>
     <dimen name="city_enter_size">100dp</dimen>
+    <dimen name="city_text_size">25dp</dimen>
+    <dimen name="margin_top_of_indicators_block">45dp</dimen>
+    <dimen name="location_icon_size">25dp</dimen>
+    <dimen name="location_icon_margin">5dp</dimen>
+    <dimen name="info_layout_marginTop">90dp</dimen>
+    <dimen name="indicators_block_width">140dp</dimen>
+    <dimen name="indicator_text_size">10sp</dimen>
+    <dimen name="indicator_value_size">19sp</dimen>
+    <dimen name="icon_sizes">25dp</dimen>
+    <dimen name="settings_icon_margin">10dp</dimen>
+    <dimen name="theme_change_marginTop">60dp</dimen>
 </resources>
