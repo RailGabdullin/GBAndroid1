@@ -2,53 +2,61 @@ package com.gabdullin.weather;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Toast;
 
-public class Settings extends AppCompatActivity {
+public class Settings extends Fragment {
 
-    private static final String Tag = "LifeCycle";
     private EditText theCity;
-    private CheckBox wind_forse;
+    private CheckBox wind_force;
     private CheckBox wet;
     private CheckBox pressure;
+    private CheckBox theme;
+
+//    public static Settings create(){
+//        Settings settings = new Settings();
+//
+//        return settings;
+//    }
 
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(), TheCityWeather.class);
+            Intent intent = new Intent(getContext(), TheCityWeather.class);
             setBundle(intent);
-            startActivity(intent);
+            TheCityWeather.create(intent);
         }
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        showLiveCycleStage("onCreate");
-        setViews();
-    }
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,
+                             Bundle savedInstanceState) {
+//        return inflater.inflate(R.layout.settings, container, false);
 
-    private void setViews() {
-        theCity = findViewById(R.id.the_city);
-        wind_forse = findViewById(R.id.wind_force);
-        wet = findViewById(R.id.wet);
-        pressure = findViewById(R.id.pressure);
+        View layout = inflater.inflate(R.layout.settings, container, false);
 
-        Button button = findViewById(R.id.button);
+        theCity = layout.findViewById(R.id.the_city);
+        wind_force = layout.findViewById(R.id.wind_force);
+        wet = layout.findViewById(R.id.wet);
+        pressure = layout.findViewById(R.id.pressure);
+        theme = layout.findViewById(R.id.theme);
+
+        Button button = layout.findViewById(R.id.button);
         button.setOnClickListener(listener);
+
+        return layout;
 
     }
 
     private void setBundle(Intent intent) {
         String theCityName = theCity.getText().toString();
-        boolean windForceState = wind_forse.isChecked();
+        boolean windForceState = wind_force.isChecked();
         boolean wetState = wet.isChecked();
         boolean pressureState = pressure.isChecked();
 
@@ -56,61 +64,8 @@ public class Settings extends AppCompatActivity {
         intent.putExtra(TheCityWeather.EXTRA_WIND_FORCE, windForceState);
         intent.putExtra(TheCityWeather.EXTRA_WET_STATE, wetState);
         intent.putExtra(TheCityWeather.EXTRA_PRESSURE_STATE, pressureState);
+        intent.putExtra(TheCityWeather.EXTRA_THEME, theme.isChecked());
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        showLiveCycleStage("onStart");
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        showLiveCycleStage("onRestoreInstanceState");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        showLiveCycleStage("onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        showLiveCycleStage("onPause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        showLiveCycleStage("onStop");
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        showLiveCycleStage("onSaveInstanceState");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        showLiveCycleStage("onDestroy");
-    }
-
-    private void showLiveCycleStage(String text) {
-        makeToast(text);
-        makeLogWrite(text);
-    }
-
-    private void makeToast(String text) {
-        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
-
-    private void makeLogWrite(String text) {
-        Log.i(Tag, text);
-    }
 }

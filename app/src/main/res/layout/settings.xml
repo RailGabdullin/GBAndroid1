@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/where" />
+
+        <EditText
+            android:id="@+id/the_city"
+            android:layout_width="@dimen/city_enter_size"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/indicators_block_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/theme_change_marginTop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/theme" />
+
+        <CheckBox
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/indicators_block_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_of_indicators_block"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/indicators_block_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:layout_gravity="center"
+                android:src="@drawable/wind_force"
+                android:text="@string/wind_force" />
+
+            <CheckBox
+                android:id="@+id/wind_force"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/indicators_block_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:layout_gravity="center"
+                android:src="@drawable/pressure"
+                android:text="@string/pressure" />
+
+            <CheckBox
+                android:id="@+id/pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/indicators_block_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_sizes"
+                android:layout_height="@dimen/icon_sizes"
+                android:layout_gravity="center"
+                android:src="@drawable/wet"
+                android:text="@string/wet" />
+
+            <CheckBox
+                android:id="@+id/wet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button" />
+    </LinearLayout>
+</LinearLayout>

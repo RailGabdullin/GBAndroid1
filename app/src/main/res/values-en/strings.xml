@@ -22,5 +22,6 @@
     <string name="wet_units">%</string>
     <string name="wind_force_units">m/sec</string>
     <string name="temperature_units">°C</string>
+    <string name="theme">Dark theme</string>
 
 </resources>
