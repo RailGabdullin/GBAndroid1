@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="Title">Weather now</string>
+    <string name="Button">Apply settings</string>
+    <string name="first_city">Moscow</string>
+    <string name="second_city">Saint-Petersburg</string>
+    <string name="third_city">Ufa</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind_force">Wind force</string>
+    <string name="wet">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="weather_in_">Weather in city</string>
+    <string name="no_value">_Н</string>
+    <string name="where">Select city</string>
+    <string name="wind_force_value">10</string>
+    <string name="temperature_force_value">15</string>
+    <string name="pressure_value">57</string>
+    <string name="pressure_units">mmHg</string>
+    <string name="wet_value">40</string>
+    <string name="wet_units">%</string>
+    <string name="wind_force_units">m/sec</string>
+    <string name="temperature_units">°C</string>
+    <string name="theme">Dark theme</string>
+
+</resources>
